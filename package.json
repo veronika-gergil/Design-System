@@ -1,0 +1,66 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "This repository contains the final project for the course \"Technical implementation of a design system for a web platform\"",
+  "main": "index.html",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" ",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "keywords": [
+    "Design",
+    "system",
+    "HTML",
+    "CSS",
+    "ITMO",
+    "third",
+    "semester"
+  ],
+  "authors": [
+    "Beta Aquarius",
+    "Ersova Ksenia",
+    "Gyallarhorn"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^2.0.5",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.31",
+    "postcss-csso": "^6.0.1",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-htmlacademy": "^2.0.6",
+    "stylelint-config-recess-order": "^4.3.0"
+  }
+}
