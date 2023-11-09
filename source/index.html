@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,26 +9,6 @@
 </head>
 
 <body>
-  @@include('./blocks/header.html')
-  <main>
-    <picture class="promo__picture">
-      <picture class="promo__picture">
-        <source type="image/webp" media="(min-width: 1280px)"
-          srcset="img/promo-image_food__dekstop.webp 1x, img/promo-image_food__dekstop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/promo-image_food__tablet.webp 1x,  img/promo-image_food__tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/promo-image_food.webp 1x,img/promo-image_food@2x.webp 2x">
-
-        <source media="(min-width: 1280px)"
-          srcset="img/promo-image_food__dekstop.png 1x, img/promo-image_food__dekstop@2x.png 2x">
-        <source media="(min-width: 768px)"
-          srcset="img/promo-image_food__tablet.png 1x,img/promo-image_food__tablet@2x.png 2x">
-        <img class="promo__image" src="img/promo-image_food.png" srcset="img/promo-image_food@2x.png 2x"
-          alt="Пример продукта" width="280" height="270">
-      </picture>
-    </picture>
-  </main>
-  @@include('./blocks/footer.html')
 </body>
 
 </html>
