@@ -56,7 +56,7 @@ gulp.task('html', () => {
 
 gulp.task('scripts', () => {
   return gulp
-    .src('./source/js/script.js')
+    .src('./source/js/script.js', { allowEmpty: true })
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(sync.stream())
