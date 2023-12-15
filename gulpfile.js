@@ -182,7 +182,7 @@ gulp.task('build', gulp.series(
 gulp.task('default', gulp.series(
   'clean',
   'copy',
-  'optimizeImages',
+  'copyImages',
   gulp.parallel(
     'styles',
     'html',
