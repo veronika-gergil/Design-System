@@ -1,5 +1,6 @@
 .header {
   padding: 55px 0 60px 0;
+  margin: 0 0 70px 0;
   background-color: var(--secondary-background-color);
 }
 
@@ -15,7 +16,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px 68px;
-  // justify-content: space-between;
   justify-self: end;
 }
 
@@ -43,7 +43,7 @@
     width: 100%;
   }
 
-  &:focus {
+  &:focus-visible {
     border: none;
     outline: 1px dashed var(--hover-line-color);
   }
