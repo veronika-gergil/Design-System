@@ -1,0 +1,30 @@
+.main-navigation {
+  margin: 0 0 60px 0;
+}
+
+.main-navigation__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 40px;
+}
+
+.main-navigation__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  min-height: 387px;
+  padding: 35px 54px 63px 54px;
+  background-color: var(--secondary-background-color);
+  border-radius: 45px;
+}
+
+.main-navigation__list-title {
+  margin: 0;
+}
+
+.main-navigation__list-text {
+  flex: 1;
+  margin: 0;
+}

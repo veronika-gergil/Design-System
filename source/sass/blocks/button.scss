@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  padding: 18px 50px;
+  font-size: 0.8889rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+  border: 3px solid var(--text-color);
+  border-radius: 27px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  &::before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    content: "";
+    border: 1px dashed var(--hover-line-color);
+    opacity: 0;
+  }
+
+  &:hover {
+    color: var(--secondary-background-color);
+    background-color: var(--text-color);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::before {
+    opacity: 1;
+  }
+}
