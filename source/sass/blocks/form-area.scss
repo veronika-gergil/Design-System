@@ -1,0 +1,51 @@
+.form-area {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 36px;
+}
+
+.form-area__fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form-area__input,
+.form-area__comment {
+  width: 100%;
+  padding: 24px 46px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+  border: 2px solid var(--boder-color);
+  border-radius: 26px;
+  transition: border-color 0.5s ease;
+
+  &::placeholder {
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border-color: var(--text-color);
+    outline: none;
+  }
+}
+
+.form-area__comment {
+  min-height: 176px;
+}
+
+.form-area__button {
+  justify-self: center;
+}

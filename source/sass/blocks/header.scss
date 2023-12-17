@@ -34,7 +34,7 @@
     width: 0;
     height: 1px;
     content: "";
-    background-color: var(--hover-line-color);
+    background-color: var(--text-color);
     transition: width 0.5s ease;
     transform: translateX(-50%);
   }
@@ -45,7 +45,7 @@
 
   &:focus-visible {
     border: none;
-    outline: 1px dashed var(--hover-line-color);
+    outline: 1px dashed var(--text-color);
   }
 }
 

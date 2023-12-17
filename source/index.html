@@ -41,6 +41,7 @@
   <main>
     <nav class="main-navigation">
       <div class="container">
+        <h2 class="visually-hidden">Навигация</h2>
         <ul class="main-navigation__list list-reset">
           <li class="main-navigation__list-item">
             <h3 class="main-navigation__list-title title title--small">Стили</h3>
@@ -66,6 +67,28 @@
         </ul>
       </div>
     </nav>
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__wrapper">
+          <h2 class="title title--small feedback__title">Остались вопросы?</h2>
+          <p class="feedback__text">Напишите нам!</p>
+          <form action="#" method="post" class="feedback__form form-area">
+            <fieldset class="form-area__fieldset">
+              <legend class="visually-hidden">Персональные данные</legend>
+              <label for="email" class="visually-hidden">Почта</label>
+              <input class="form-area__input" placeholder="Ваша почта" type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" title="someemail@mail.com">
+              <label for="name" class="visually-hidden">Имя</label>
+              <input class="form-area__input" placeholder="Ваше имя" type="text" pattern="^[a-zA-Zа-яА-Я]+$" id="name"
+                name="name" title="Только буквы разрешены">
+            </fieldset>
+            <label for="comment" class="visually-hidden">Введите комментарий</label>
+            <textarea class="form-area__comment" name="comment" id="comment" placeholder="Ваше сообщение"></textarea>
+            <button class="button form-area__button">Связаться</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
