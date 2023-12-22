@@ -39,10 +39,13 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
     "@htmlacademy/editorconfig-cli": "^2.0.5",
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-cli": "^2.3.0",
     "gulp-file-include": "^2.3.0",
@@ -61,6 +64,12 @@
     "sass": "^1.69.5",
     "stylelint": "^15.11.0",
     "stylelint-config-htmlacademy": "^2.0.6",
-    "stylelint-config-recess-order": "^4.3.0"
+    "stylelint-config-recess-order": "^4.3.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

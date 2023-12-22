@@ -1,0 +1,40 @@
+.footer {
+  padding: 70px 0;
+  background-color: var(--secondary-background-color);
+  transition: background-color 0.5s ease;
+}
+
+.footer__social-list {
+  margin-bottom: 80px;
+}
+
+.footer__social-list--active {
+  display: flex;
+}
+
+.footer__info {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer__info-item {
+  margin: 0;
+  font-size: 0.8889rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+
+.footer__info-item--purpose {
+  max-width: 270px;
+}
+
+.footer__info-item--developer {
+  max-width: 150px;
+}
+
+.footer__info-item--design {
+  max-width: 154px;
+}
+

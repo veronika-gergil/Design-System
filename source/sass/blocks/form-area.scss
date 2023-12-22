@@ -15,7 +15,6 @@
 
 .form-area__input,
 .form-area__comment {
-  width: 100%;
   padding: 24px 46px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -23,7 +22,7 @@
   line-height: 150%;
   color: var(--text-color);
   letter-spacing: 0.03em;
-  border: 2px solid var(--boder-color);
+  border: 2px solid var(--border-color);
   border-radius: 26px;
   transition: border-color 0.5s ease;
 

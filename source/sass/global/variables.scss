@@ -4,5 +4,14 @@
   --text-color: #213457;
   --scrollbar-color: rgba(124, 137, 175, 0.4);
   --scrollbar-track-color: #5b7099;
-  --boder-color: #5b7099;
+  --border-color: #5b7099;
+  --footer-icon-color: #213457;
+}
+
+
+.dark {
+  --primary-background-color: #bdc3d5;
+  --secondary-background-color: #213457;
+  --text-color: #e6e6e6;
+  --footer-icon-color: #bdc3d5;
 }

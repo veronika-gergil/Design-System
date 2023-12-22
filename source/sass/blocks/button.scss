@@ -12,8 +12,9 @@
   border: 3px solid var(--text-color);
   border-radius: 27px;
   transition:
-    color 0.3s ease,
-    background-color 0.3s ease;
+    color 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 
   &::before {
     position: absolute;
