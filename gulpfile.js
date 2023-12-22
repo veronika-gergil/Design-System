@@ -15,7 +15,8 @@ const csso = require('postcss-csso')
 const htmlmin = require('gulp-htmlmin')
 const fileinclude = require('gulp-file-include')
 
-const terser = require('gulp-terser')
+const babel = require('gulp-babel')
+const webpack = require('webpack-stream')
 
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin')
@@ -56,8 +57,9 @@ gulp.task('html', () => {
 
 gulp.task('scripts', () => {
   return gulp
-    .src('./source/js/script.js', { allowEmpty: true })
-    .pipe(terser())
+    .src('./source/js/*.js')
+    .pipe(babel())
+    .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('build/js'))
     .pipe(sync.stream())
 })
@@ -157,7 +159,7 @@ gulp.task('clean', (done) => {
 
 gulp.task('watcher', () => {
   gulp.watch('./source/sass/**/*.scss', gulp.series('styles'))
-  gulp.watch('./source/js/script.js', gulp.series('scripts'))
+  gulp.watch('./source/js/**/*.js', gulp.series('scripts'))
   gulp.watch('./source/blocks/*.html', gulp.series('html', 'reload'))
   gulp.watch('./source/*.html', gulp.series('html', 'reload'))
 })
