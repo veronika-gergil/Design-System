@@ -6,6 +6,7 @@
   padding: 50px 60px 80px 60px;
   background-color: var(--secondary-background-color);
   border-radius: 45px;
+  transition: background-color 0.5s ease;
 }
 
 .feedback__title {

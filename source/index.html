@@ -9,47 +9,22 @@
 </head>
 
 <body class="page-body">
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <a class="header__logo-link" aria-label="Логотип Healify">Some logo</a>
-        <ul class="header__menu list-reset">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Наша миссия</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Ресурсы</a>
-          </li>
-        </ul>
-      </div>
-      <section class="header__bottom">
-        <h1 class="visually-hidden">Дизайн-система Healify</h1>
-        <div class="header__content">
-          <h2 class="header__title title">Привет!</h2>
-          <p class="header__text">Добро пожаловать в&nbsp;пространство внутренней гармонии! Наша дизайн система посвящена помощи в&nbsp;борьбе с&nbsp;эмоциональным выгоранием и&nbsp;поиску пути к&nbsp;психологическому благополучию.
-          </p>
-        </div>
-        <picture class="header__picture">
-          <source type="image/webp" srcset="img/Medit.webp 1x,img/Medit@2x.webp 2x">
-          <img class="header__image" src="img/Medit.png" srcset="img/Medit@2x.png 2x"
-            alt="Темноволосая девушка сидит в позе лотоса и медитирует" width="412" height="412">
-        </picture>
-      </section>
-    </div>
-  </header>
+  @@include('./blocks/header.html')
+  @@include('./blocks/theme.html')
   <main>
     <nav class="main-navigation">
       <div class="container">
-
         <ul class="main-navigation__list list-reset">
           <li class="main-navigation__list-item">
             <h3 class="main-navigation__list-title title title--small">Стили</h3>
-            <p class="main-navigation__list-text">Фирменные цвета, логотип, шрифты, иллюстрации и&nbsp;иконки бренда.</p>
+            <p class="main-navigation__list-text">Фирменные цвета, логотип, шрифты, иллюстрации и&nbsp;иконки бренда.
+            </p>
             <a class="button main-navigation__list-link" href="#">Перейти</a>
           </li>
           <li class="main-navigation__list-item">
             <h3 class="main-navigation__list-title title title--small">Компоненты</h3>
-            <p class="main-navigation__list-text">Используйте фирменные элементы брэнда Healify в&nbsp;вашем дизайне.</p>
+            <p class="main-navigation__list-text">Используйте фирменные элементы брэнда Healify в&nbsp;вашем дизайне.
+            </p>
             <a class="button main-navigation__list-link" href="#">Перейти</a>
           </li>
           <li class="main-navigation__list-item">
@@ -59,7 +34,8 @@
           </li>
           <li class="main-navigation__list-item">
             <h3 class="main-navigation__list-title title title--small">Гайдлайн</h3>
-            <p class="main-navigation__list-text">Прочитайте наши рекомендации по&nbsp;бренд-айдентике и&nbsp;примеры применения решений.</p>
+            <p class="main-navigation__list-text">Прочитайте наши рекомендации по&nbsp;бренд-айдентике и&nbsp;примеры
+              применения решений.</p>
             <a class="button main-navigation__list-link" href="#">Перейти</a>
           </li>
         </ul>
@@ -88,41 +64,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <ul class="footer__social-list social-list footer__social-list--active list-reset">
-        <li class="social-list__item">
-          <a href="https://spb.hh.ru/resume/6875b0ffff0c10617c0039ed1f346572484975" target="_blank" rel="noopener noreferrer" class="social-list__link"
-            aria-label="HeadHunter Ершовой Ксении" title="Ершова Ксения">
-            <svg class="social-list__icon social-list__icon--hh" width="80px" height="80px">
-              <use xlink:href="img/icons.svg#headhunter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://github.com/Gyallarhorn" target="_blank" rel="noopener noreferrer" class="social-list__link" aria-label="GitHub Рыженко Артема"
-            title="Рыженко Артем">
-            <svg class="social-list__icon social-list__icon--github" width="80px" height="80px">
-              <use xlink:href="img/icons.svg#github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://t.me/betaquarius" target="_blank" rel="noopener noreferrer" class="social-list__link" aria-label="Telegram Гергиль Вероники"
-            title="Гергиль Вероника">
-            <svg class="social-list__icon social-list__icon--telegram" width="80px" height="80px">
-              <use xlink:href="img/icons.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__info">
-        <p class="footer__info-item footer__info-item--purpose">Content is&nbsp;used for educational purposes</p>
-        <p class="footer__info-item footer__info-item--developer">Web Developer: Artem Ryzhenko</p>
-        <p class="footer__info-item footer__info-item--design">Designers: Ksenia Ershova &amp;&nbsp;Veronika Gergil</p>
-      </div>
-    </div>
-  </footer>
+  @@include('./blocks/footer.html')
   <script src="./js/index.bundle.js"></script>
 </body>
 

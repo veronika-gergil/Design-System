@@ -2,6 +2,7 @@
   padding: 55px 0 60px 0;
   margin: 0 0 70px 0;
   background-color: var(--secondary-background-color);
+  transition: background-color 0.5s ease;
 }
 
 .header__top {
@@ -26,6 +27,7 @@
   line-height: 150%;
   color: var(--text-color);
   letter-spacing: 0.03em;
+  transition: color 0.5s ease;
 
   &::before {
     position: absolute;
