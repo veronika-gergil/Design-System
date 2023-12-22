@@ -1,0 +1,39 @@
+.social-list {
+  display: none;
+  gap: 40px;
+  justify-content: center;
+}
+
+.social-list__icon {
+  transition: transform 0.5s ease;
+}
+
+.social-list__link {
+  position: relative;
+  display: block;
+  line-height: 0;
+
+  &::before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    content: "";
+    border: 1px dashed var(--text-color);
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+  &:hover svg {
+    transform: scale(1.2);
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
