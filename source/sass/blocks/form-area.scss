@@ -20,11 +20,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 150%;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   letter-spacing: 0.03em;
-  border: 2px solid var(--border-color);
+  background-color: var(--input-background);
+  border: 2px solid var(--scrollbar-track-color);
   border-radius: 26px;
-  transition: border-color 0.5s ease;
+  transition:
+    border-color 0.5s ease,
+    color 0.3s ease;
 
   &::placeholder {
     transition: opacity 0.5s ease;
@@ -36,13 +39,18 @@
   }
 
   &:focus {
-    border-color: var(--text-color);
+    border-color: var(--primary-text-color);
     outline: none;
+  }
+
+  &:invalid {
+    color: var(--error-color);
   }
 }
 
 .form-area__comment {
   min-height: 176px;
+  resize: none;
 }
 
 .form-area__button {

@@ -20,12 +20,16 @@
   justify-self: end;
 }
 
+.header__logo-link[href]:hover {
+  opacity: 0.7;
+}
+
 .header__menu-link {
   position: relative;
   font-size: 0.8889rem;
   font-weight: 600;
   line-height: 150%;
-  color: var(--text-color);
+  color: var(--primary-text-color);
   letter-spacing: 0.03em;
   transition: color 0.5s ease;
 
@@ -36,7 +40,7 @@
     width: 0;
     height: 1px;
     content: "";
-    background-color: var(--text-color);
+    background-color: var(--primary-text-color);
     transition: width 0.5s ease;
     transform: translateX(-50%);
   }
@@ -47,7 +51,7 @@
 
   &:focus-visible {
     border: none;
-    outline: 1px dashed var(--text-color);
+    outline: 1px dashed var(--primary-text-color);
   }
 }
 

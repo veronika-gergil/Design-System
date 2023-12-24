@@ -6,10 +6,10 @@
   height: 72px;
   padding: 0;
   overflow: hidden;
-  color: var(--text-color);
+  color: var(--primary-text-color);
   cursor: pointer;
   background: none;
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--primary-text-color);
   border-radius: 10px;
   transition:
     color 0.3s ease,
@@ -18,7 +18,7 @@
   &:hover,
   &:focus-visible {
     color: var(--secondary-background-color);
-    background-color: var(--text-color);
+    background-color: var(--primary-text-color);
   }
 
   &:focus-visible {
