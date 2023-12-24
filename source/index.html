@@ -48,30 +48,25 @@
           <p class="feedback__text">Напишите нам!</p>
           <form action="#" method="post" class="feedback__form form-area">
             <fieldset class="form-area__fieldset">
-              <legend class="visually-hidden">Персональные данные</legend>
+              <legend class="form-area__label visually-hidden">Персональные данные</legend>
+              <input class="form-area__input" placeholder="Ваша почта" type="email" id="email" name="email"
+                title="someemail@mail.com">
               <label for="email" class="visually-hidden">Почта</label>
-              <input class="form-area__input" placeholder="Ваша почта" type="email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" title="someemail@mail.com">
-              <label for="name" class="visually-hidden">Имя</label>
-              <input class="form-area__input" placeholder="Ваше имя" type="text" pattern="^[a-zA-Zа-яА-Я]+$" id="name"
-                name="name" title="Только буквы разрешены">
+              <input class="form-area__input" placeholder="Ваше имя" type="text" id="name" name="name"
+                title="Только буквы разрешены" pattern="^[A-Za-zА-Яа-я]+$">
+              <label for="name" class="form-area__label visually-hidden">Имя</label>
             </fieldset>
-            <label for="comment" class="visually-hidden">Введите комментарий</label>
+            <label for="comment" class="form-area__label visually-hidden">Введите комментарий</label>
             <textarea class="form-area__comment" name="comment" id="comment" placeholder="Ваше сообщение"></textarea>
-            <button class="button form-area__button" type="submit">Связаться</button>
+            <button class="button form-area__button" type="submit" disabled>Связаться</button>
           </form>
         </div>
       </div>
       <section class="modal" role="dialog" aria-modal="true">
         <div class="modal__body">
-          <button class="modal__close-link" type="button">
-            <svg class="moda__close-icon" width="50px" height="50px">
-              <use xlink:href="./img/icons.svg#close-btn"></use>
-            </svg>
-          </button>
           <h2 class="modal__body-title title title--small">Отлично!</h2>
           <p class="modal__body-text">Мы&nbsp;получили ваше сообщение и&nbsp;скоро с&nbsp;вами свяжемся.</p>
-          <button class="button modal__body-button" tabindex="-1">Продолжить</button>
+          <button class="button modal__body-button">Продолжить</button>
         </div>
       </section>
     </section>

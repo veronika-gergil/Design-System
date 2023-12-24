@@ -22,9 +22,12 @@
   line-height: 150%;
   color: var(--text-color);
   letter-spacing: 0.03em;
+  background-color: var(--input-background);
   border: 2px solid var(--border-color);
   border-radius: 26px;
-  transition: border-color 0.5s ease;
+  transition:
+    border-color 0.5s ease,
+    color 0.3s ease;
 
   &::placeholder {
     transition: opacity 0.5s ease;
@@ -39,10 +42,15 @@
     border-color: var(--text-color);
     outline: none;
   }
+
+  &:invalid {
+    color: var(--error-color);
+  }
 }
 
 .form-area__comment {
   min-height: 176px;
+  resize: none;
 }
 
 .form-area__button {
