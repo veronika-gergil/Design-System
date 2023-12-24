@@ -4,12 +4,12 @@
   font-size: 0.8889rem;
   font-weight: 600;
   line-height: 150%;
-  color: var(--text-color);
+  color: var(--primary-text-color);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
   background-color: transparent;
-  border: 3px solid var(--text-color);
+  border: 3px solid var(--primary-text-color);
   border-radius: 27px;
   transition:
     color 0.5s ease,
@@ -24,13 +24,13 @@
     width: calc(100% + 12px);
     height: calc(100% + 12px);
     content: "";
-    border: 1px dashed var(--text-color);
+    border: 1px dashed var(--primary-text-color);
     opacity: 0;
   }
 
   &:hover {
     color: var(--secondary-background-color);
-    background-color: var(--text-color);
+    background-color: var(--primary-text-color);
   }
 
   &:focus-visible {

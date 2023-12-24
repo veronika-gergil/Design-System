@@ -1,22 +1,40 @@
 :root {
   --primary-background-color: #e4e4e4;
   --secondary-background-color: #bdc3d5;
-  --text-color: #213457;
+  --primary-text-color: #213457;
+  --secondary-text-color: #213457;
   --scrollbar-color: rgba(124, 137, 175, 0.4);
   --scrollbar-track-color: #5b7099;
-  --border-color: #5b7099;
-  --footer-icon-color: #213457;
   --transparent-color-01: rgba(0, 0, 0, 0.1);
   --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   --icon-background: #212121;
   --error-color: #b20d0d;
   --input-background: #dedfe2;
+  --like-color: #3b639c;
 }
 
 
 .dark {
   --primary-background-color: #bdc3d5;
   --secondary-background-color: #213457;
-  --text-color: #e6e6e6;
-  --footer-icon-color: #bdc3d5;
+  --primary-text-color: #e6e6e6;
+  --like-color: var(--primary-background-color);
+
+  .social-list__link {
+    color: var(--primary-background-color);
+  }
+
+  .modal__body {
+    background-color: var(--primary-text-color);
+  }
+
+  .modal__body-button {
+    color: var(--secondary-text-color);
+    border-color: var(--secondary-text-color);
+
+    &:hover {
+      color: var(--primary-text-color);
+      background-color: var(--secondary-background-color);
+    }
+  }
 }
