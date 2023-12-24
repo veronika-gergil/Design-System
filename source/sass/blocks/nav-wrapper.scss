@@ -1,0 +1,27 @@
+.nav-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.nav-wrapper__article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  min-height: 347px;
+  padding: 40px 62px 60px 62px;
+  background-color: var(--secondary-background-color);
+  border-radius: 50px;
+  transition: background-color 0.5s ease;
+}
+
+.nav-wrapper__article-title,
+.naw-wrapper__article-text, {
+  margin: 0;
+}
+
+.naw-wrapper__article-text {
+  flex: 1;
+}
