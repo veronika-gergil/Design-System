@@ -1,5 +1,5 @@
 :root {
-  --primary-background-color: #e4e4e4;
+  --primary-background-color: #e6e6e6;
   --secondary-background-color: #bdc3d5;
   --primary-text-color: #213457;
   --secondary-text-color: #213457;
@@ -7,18 +7,26 @@
   --scrollbar-track-color: #5b7099;
   --transparent-color-01: rgba(0, 0, 0, 0.1);
   --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  --box-shadow-card: 0px 4px 15px 6px rgba(161, 170, 196, 0.4);
   --icon-background: #212121;
   --error-color: #b20d0d;
   --input-background: #dedfe2;
   --like-color: #3b639c;
+  --span-element-color: #fefefe;
+  --valid-color: #188b2a;
+  --invalid-color: #b60c35;
+  --secondary-border-color: #5b7099;
+  --card-background: #d9d9d9;
+  --invalid-text-color: #a6b3ce;
+  --color-card-text-color: #767980;
 }
-
 
 .dark {
   --primary-background-color: #bdc3d5;
   --secondary-background-color: #213457;
   --primary-text-color: #e6e6e6;
   --like-color: var(--primary-background-color);
+  --box-shadow-card: 0px 4px 15px 6px #a1aac4;
 
   .social-list__link {
     color: var(--primary-background-color);
@@ -40,5 +48,13 @@
 
   .header__logo-link {
     color: var(--primary-background-color);
+  }
+
+  .color--border-light::before {
+    outline-color: transparent;
+  }
+
+  .color--border-dark::before {
+    outline-color: var(--secondary-text-color);
   }
 }

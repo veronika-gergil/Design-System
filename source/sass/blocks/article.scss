@@ -1,0 +1,21 @@
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  min-height: 347px;
+  padding: 40px 62px 60px 62px;
+  background-color: var(--secondary-background-color);
+  border-radius: 50px;
+  transition: background-color 0.5s ease;
+}
+
+.article__title,
+.article__text, {
+  margin: 0;
+}
+
+.article__text {
+  flex: 1;
+}

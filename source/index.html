@@ -4,32 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, итмо, Healify, HTML, CSS, студенческий проект ">
   <link rel="stylesheet" href="css/style.css">
   <title>Дизайн-система Healify</title>
 </head>
 
 <body class="page-body">
-  @@include('./blocks/header.html')
   @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <h1 class="visually-hidden">Дизайн-система Healify</h1>
+        <div class="header__content">
+          <h2 class="header__title title">Привет!</h2>
+          <p class="header__text">Добро пожаловать в&nbsp;пространство внутренней гармонии! Наша дизайн система
+            посвящена помощи в&nbsp;борьбе с&nbsp;эмоциональным выгоранием и&nbsp;поиску пути к&nbsp;психологическому
+            благополучию.
+          </p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/Medit.webp 1x,img/Medit@2x.webp 2x">
+          <img class="header__image" src="img/Medit.png" srcset="img/Medit@2x.png 2x"
+            alt="Темноволосая девушка сидит в позе лотоса и медитирует" width="412" height="412">
+        </picture>
+      </section>
+    </div>
+  </header>
   <main>
     <nav class="main-navigation">
       <div class="container">
-        <section class="main-navigation__styles">
+        <section class="main-navigation-styles">
           <h2 class="title title--middle main-navigation__title">Стили</h2>
           <ul class="main-navigation__navigation-list navigation-list list-reset">
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Цвета</h3>
-              <p class="navigation-list__text">Палитра цветов и&nbsp;правила сочетания для создания узнаваемого визуального стиля.</p>
-              <a href="#" class="button navigation-list__link">Перейти</a>
+              <p class="navigation-list__text">Палитра цветов и&nbsp;правила сочетания для создания узнаваемого
+                визуального стиля.</p>
+              <a href="palette.html" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Шрифты</h3>
-              <p class="navigation-list__text">Стили текста для создания читаемости и&nbsp;единообразия в&nbsp;интерфейсе</p>
+              <p class="navigation-list__text">Стили текста для создания читаемости и&nbsp;единообразия
+                в&nbsp;интерфейсе</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Логотип</h3>
-              <p class="navigation-list__text">Наш уникальный знак для выражения идеи, обеспечивает узнаваемость бренда.</p>
+              <p class="navigation-list__text">Наш уникальный знак для выражения идеи, обеспечивает узнаваемость бренда.
+              </p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
@@ -59,7 +83,7 @@
             </li>
           </ul>
         </section>
-        <section class="main-nagivation__components">
+        <section class="main-nagivation-components">
           <h2 class="title title--middle main-navigation__title">Компоненты</h2>
           <ul class="main-navigation__navigation-list navigation-list navigation-list--components list-reset">
             <li class="navigation-list__item">
@@ -74,47 +98,54 @@
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
             <li class="navigation-list__item">
               <h3 class="navigation-list__title title title--very-small">Иконки</h3>
-              <p class="navigation-list__text">Правила для создания консистентных графических элементов в&nbsp;интерфейсе.</p>
+              <p class="navigation-list__text">Правила для создания консистентных графических элементов
+                в&nbsp;интерфейсе.</p>
               <a href="#" class="button navigation-list__link">Перейти</a>
             </li>
           </ul>
           <div class="nav-wrapper">
-            <article class="nav-wrapper__article">
-              <h3 class="nav-wrapper__article-title title title--small">Гайдлайн</h3>
-              <p class="naw-wrapper__article-text">Набор рекомендаций по&nbsp;бренд-айдентике для обеспечения согласованности в&nbsp;интерфейсе и&nbsp;примеры применения.</p>
-              <a href="#" class="button naw-wrapper__article-link">Перейти</a>
+            <article class="nav-wrapper-article article">
+              <h3 class="article__title title title--small">Гайдлайн</h3>
+              <p class="article__text">Набор рекомендаций по&nbsp;бренд-айдентике для обеспечения
+                согласованности в&nbsp;интерфейсе и&nbsp;примеры применения.</p>
+              <a href="#" class="button article__link">Перейти</a>
             </article>
-            <article class="nav-wrapper__article">
-              <h3 class="nav-wrapper__article-title title title--small">Сетка</h3>
-              <p class="naw-wrapper__article-text">Рекомендации по&nbsp;расположению элементов интерфейса Healify для достижения гармонии и&nbsp;упорядоченности.</p>
-              <a href="#" class="button naw-wrapper__article-link">Перейти</a>
+            <article class="nav-wrapper-article article">
+              <h3 class="article__title title title--small">Сетка</h3>
+              <p class="article__text">Рекомендации по&nbsp;расположению элементов интерфейса Healify для
+                достижения гармонии и&nbsp;упорядоченности.</p>
+              <a href="#" class="button article__link">Перейти</a>
             </article>
-
           </div>
         </section>
       </div>
@@ -155,7 +186,7 @@
     </section>
   </main>
   @@include('./blocks/footer.html')
-  <script src="./js/index.bundle.js"></script>
+  <script src="./js/bundle.js"></script>
 </body>
 
 </html>

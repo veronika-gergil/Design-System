@@ -1,0 +1,35 @@
+.main-inner {
+  color: var(--secondary-text-color);
+}
+
+.main-inner__section:not(:last-child) {
+  margin: 0 0 70px 0;
+}
+
+.main-inner__title {
+  margin: 0 0 40px 0;
+}
+
+.main-inner__subtitle {
+  margin: 0 0 20px 0;
+}
+
+.main-inner__element {
+  padding: 12px 26px;
+  font-size: 0.8889rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--span-element-color);
+  letter-spacing: 0.03em;
+  background-color: var(--valid-color);
+  border-radius: 50px;
+
+  &--invalid {
+    background-color: var(--invalid-color);
+  }
+
+  &--big {
+    padding: 14px 31px;
+    font-size: 1.0556rem;
+  }
+}

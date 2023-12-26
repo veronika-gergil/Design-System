@@ -1,0 +1,9 @@
+.colors-rules {
+  margin: 0 0 120px 0;
+}
+
+.colors-rules__wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 35px;
+}

@@ -2,4 +2,10 @@
   width: 1260px;
   padding: 0 50px;
   margin: 0 auto;
+
+  &--inner {
+    display: grid;
+    grid-template-columns: 268px 1fr;
+    gap: 130px;
+  }
 }

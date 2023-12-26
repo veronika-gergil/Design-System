@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, палитра,  HTML, CSS, студенческий проект, ">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Палитра</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <div class="header__content">
+          <h1 class="header__title title">Палитра</h1>
+          <p class="header__text">Мы&nbsp;разработали темную и&nbsp;светлую, сбалансированные палитры, создав атмосферу
+            умиротворения и&nbsp;сфокусированности.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/yoga.webp 1x,img/yoga@2x.webp 2x">
+          <img class="header__image" src="img/yoga.png" srcset="img/yoga@2x.png 2x" alt="Девушка, занимающаяся йогой"
+            width="412" height="412">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="important-color main-inner__section">
+          <h2 class="main-inner__title title title--middle" id="important">Важность цвета</h2>
+          <h3 class="main-inner__subtitle title title--small">Цвет и&nbsp;эмоции</h3>
+          <div class="important-color__block important-color__block--role flex">
+            <p class="important-color__block-text important-color__block-text--emotion">Цвет в&nbsp;нашей дизайн системе
+              играет ключевую роль в&nbsp;создании
+              атмосферы умиротворения и&nbsp;спокойствия. Цвета были тщательно подобраны для поддержки психологического
+              благополучия и&nbsp;борьбы с&nbsp;выгоранием.</p>
+            <picture class="important-color__block-picture">
+              <source type="image/webp" srcset="img/Breath.webp 1x, img/Breath@2x.webp 2x">
+              <img class="important-color__block-image" src="img/Breath.png" srcset="img/Breath.png@2x.png 2x"
+                alt="Девушка, умиротворенно сидит опрокинув голову" width="253" height="116">
+            </picture>
+          </div>
+          <p class="important-color__text important-color__text--emotion-margin">Цвет в&nbsp;дизайне интерфейса
+            не&nbsp;просто эстетический выбор,
+            он&nbsp;оказывает глубокое влияние на&nbsp;эмоциональное состояние пользователя. В&nbsp;нашем случае, цвета
+            были выбраны с&nbsp;учетом их&nbsp;воздействия на&nbsp;эмоции и&nbsp;направлены на&nbsp;создание
+            поддерживающей среды. Глубокий темно-синий и&nbsp;светло-сиреневый создают ощущение сосредоточенности
+            и&nbsp;спокойствия.</p>
+          <h3 class="main-inner__subtitle title title--small">Цель цвета</h3>
+          <div class="important-color__block important-color__block--purpose">
+            <p class="important-color__block-text">Цель использования цвета должна быть
+              ясна, используйте цвет для поддержки различных состояний. Цвет должен поддерживать сообщение, которое
+              должны быть понятным.</p>
+            <p class="important-color__block-text">Например, красный цвет обозначает
+              ошибки, а&nbsp;зеленый сообщает об&nbsp;успешно выполненном задании.</p>
+            <div class="important-color__example">
+              <span class="main-inner__element main-inner__element--invalid main-inner__element--big">Неверно</span>
+              <span class="main-inner__element main-inner__element--valid main-inner__element--big">Верно</span>
+            </div>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">Влияние цвета</h3>
+          <div class="important-color__block flex">
+            <p class="important-color__block-text important-color__block-text--influence">Дизайн всего интерфейса
+              в&nbsp;черно-белых или монохромных тонах
+              позволяет привлекать внимание отдельным важным элементам. Цвет позволяет сосредоточить внимание
+              на&nbsp;важной информации, действиях и&nbsp;визуальных подсказках.</p>
+            <picture class="important-color__block-picture">
+              <source type="image/webp" srcset="img/Medit.webp 1x,img/Medit@2x.webp 2x">
+              <img class="important-color__block-image" src="img/Medit.png" srcset="img/Medit@2x.png 2x"
+                alt="Темноволосая девушка сидит в позе лотоса и медитирует" width="253" height="216">
+            </picture>
+          </div>
+        </section>
+        <section class="principles main-inner__section">
+          <h2 class="main-inner__title title title--middle" id="principles">Принципы</h2>
+          <h3 class="main-inner__subtitle title title--small">Контрастность</h3>
+          <p class="principles__text">Контраст между светлым текстом и&nbsp;темным фоном, как и&nbsp;наоборот,
+            обеспечивает высокую читаемость, делая контент легким для восприятия.</p>
+          <div class="principles__example">
+            <div class="principles__example-block">
+              <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+              <div class="principles__example-block-element flex flex--center">
+                <span class="principles__example-text principles__example-text--invalid">Текст</span>
+              </div>
+            </div>
+            <div class="principles__example-block">
+              <span class="main-inner__element main-inner__element--valid">Верно</span>
+              <div class="principles__example-block-element flex flex--center">
+                <span class="principles__example-text">Текст</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">Доступность</h3>
+          <p class="principles__text">Цветовая палитра разработана с&nbsp;учетом доступности. Светлый цвет текста
+            обеспечивает хороший контраст, что особенно важно для пользователей с&nbsp;ограниченными зрительными
+            возможностями.</p>
+        </section>
+        <section class="main-colors main-inner__section">
+          <h2 class="main-inner__title title title--middle" id="main-colors">Основные цвета</h2>
+          <h3 class="main-inner__subtitle title title--small">Цвета текста и&nbsp;фона</h3>
+          <div class="colors-example colors-example--background">
+            <div class="color color--big color--border-light" style="--block-color: #e6e6e6;">
+              <p class="color__text">HEX: <span class="color__code">#E6E6E6</span></p>
+            </div>
+            <div class="main-colors__example-text-wrapper">
+              <p class="main-colors__example-text">Светлый цвет текста в темной версии обеспечивает контраст и
+                читаемость на темном фоне, придавая интерфейсу легкость и содействуя общей гармонии.</p>
+              <p class="main-colors__example-text">В&nbsp;светлой версии сайта служит как цвет фона, применяется
+                инверсия.</p>
+            </div>
+          </div>
+          <div class="colors-example colors-example--background">
+            <div class="color color--big" style="--block-color: #152034;">
+              <p class="color__text">HEX: <span class="color__code">#152034</span></p>
+            </div>
+            <div class="main-colors__example-text-wrapper">
+              <p class="main-colors__example-text">Глубокий темно-синий фон в&nbsp;темной версии создает сильный
+                контраст,
+                атмосферу спокойствия и&nbsp;обеспечивает легкость восприятия информации, поддерживая общую эстетику.
+              </p>
+              <p class="main-colors__example-text">В&nbsp;светлой версии сайта играет роль цвета текста, также
+                применяется
+                инверсия цветов.
+              </p>
+            </div>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">Цвет фона</h3>
+          <div class="colors-example colors-example--background">
+            <div class="color color--big color--border-dark" style="--block-color: #BDC3D5;">
+              <p class="color__text">HEX: <span class="color__code">#BDC3D5</span></p>
+            </div>
+            <p class="main-colors__example-text">Светло-сиреневый цвет фона применяется для создания разделения блоков
+              информации, придавая интерфейсу дополнительную глубину.</p>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">Цвета компонентов</h3>
+          <div class="colors-example">
+            <div class="color" style="--block-color: #212121;">
+              <p class="color__text">HEX: <span class="color__code">#212121</span></p>
+            </div>
+            <div class="color" style="--block-color: #919CB4;">
+              <p class="color__text">HEX: <span class="color__code">#919CB4</span></p>
+            </div>
+            <div class="color" style="--block-color: #5B7099;">
+              <p class="color__text">HEX: <span class="color__code">#5B7099</span></p>
+            </div>
+          </div>
+          <ol class="main-colors__list">
+            <li class="main-colors__list-item">Темно-серый используется для активных состояний элементов интерфейса
+              и&nbsp;компонентов для придачи структурированности и&nbsp;ясности.</li>
+            <li class="main-colors__list-item">Светло-серый цвет элементов используется для некликнутых элементов
+              интерфейса.</li>
+            <li class="main-colors__list-item">Голубой цвет применяется для создания мягкого контраста фона некоторых
+              элементов, таких как иконок и&nbsp;для придания им&nbsp;воздушности.</li>
+          </ol>
+        </section>
+        <section class="main-inner__section secondary-colors">
+          <h2 class="main-inner__title title title--middle" id="secondary-colors">Вторичные цвета</h2>
+          <p class="secondary-colors__text">Мы&nbsp;используем вариацию дополнительных цветов для придачи нашим
+            иллюстрациям яркости и&nbsp;уникальности, вовлекая пользователя в&nbsp;процесс и&nbsp;обеспечивая
+            спокойствие.</p>
+          <div class="colors-example">
+            <div class="color" style="--block-color: #3B639C;">
+              <p class="color__text">HEX: <span class="color__code">#3B639C</span></p>
+            </div>
+            <div class="color" style="--block-color: #FF91A7;">
+              <p class="color__text">HEX: <span class="color__code">#FF91A7</span></p>
+            </div>
+            <div class="color" style="--block-color: #EA5B44;">
+              <p class="color__text">HEX: <span class="color__code">#EA5B44</span></p>
+            </div>
+            <div class="color" style="--block-color: #0E1F33;">
+              <p class="color__text">HEX: <span class="color__code">#0E1F33</span></p>
+            </div>
+            <div class="color" style="--block-color: #000000;">
+              <p class="color__text">HEX: <span class="color__code">#000000</span></p>
+            </div>
+            <div class="color" style="--block-color: #FF9660;">
+              <p class="color__text">HEX: <span class="color__code">#FF9660</span></p>
+            </div>
+            <div class="color" style="--block-color: #C03F4C;">
+              <p class="color__text">HEX: <span class="color__code">#C03F4C</span></p>
+            </div>
+            <div class="color" style="--block-color: #ECBD26;">
+              <p class="color__text">HEX: <span class="color__code">#C03F4C</span></p>
+            </div>
+            <div class="color" style="--block-color: #5B7099;">
+              <p class="color__text">HEX: <span class="color__code">#5B7099</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="inactive-colors main-inner__section">
+          <h2 class="main-inner__title title title--middle" id="inactive-colors">Неактивные цвета</h2>
+          <p class="inactive-colors__text">Оттенки серого используются для обозначения неактивных состояний, элементов,
+            которые находятся в&nbsp;процессе ожидания или не&nbsp;завершены.</p>
+          <div class="colors-example">
+            <div class="color" style="--block-color: #D9D9D9;">
+              <p class="color__text">HEX: <span class="color__code">#D9D9D9</span></p>
+            </div>
+            <div class="color" style="--block-color: #A1A5B0;">
+              <p class="color__text">HEX: <span class="color__code">#A1A5B0</span></p>
+            </div>
+            <div class="color" style="--block-color: #767980;">
+              <p class="color__text">HEX: <span class="color__code">#767980</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="colors-rules">
+          <h2 class="main-inner__title title title--middle" id="rules">Правила применения</h2>
+          <div class="colors-rules__wrapper">
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Компоненты</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #212121">
+                  <span class="colors-article__example-block-text" style="--text-color: #919CB4">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте цвета компонентов в&nbsp;качестве основных
+                  фонов или текста.</p>
+              </div>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #D9D9D9;">
+                  <span class="colors-article__example-block-icon-wrapper" aria-label="Иконка лотоса"
+                    style="--text-color: #5B7099;">
+                    <svg class="colors-article__example-block-icon" width="44" height="44">
+                      <use xlink:href="img/icons.svg#lotus"></use>
+                    </svg>
+                  </span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">Цвета компонентов предназначены для иконок и&nbsp;некоторых
+                  иллюстраций</p>
+              </div>
+            </article>
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Вторичные</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #374665;">
+                  <span class="colors-article__example-block-text" style="--text-color: #A6B3CE;">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте вторичные цвета в&nbsp;качестве текста или
+                  фона.</p>
+              </div>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #D9D9D9;">
+                  <span class="colors-article__example-block-icon-wrapper" aria-label="Иконка лотоса"
+                    style="--text-color: #AAB6D0;">
+                    <svg class="colors-article__example-block-icon" width="44" height="44">
+                      <use xlink:href="img/icons.svg#lotus"></use>
+                    </svg>
+                  </span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">Вторичные цвета предназначены для иллюстраций и&nbsp;некоторых
+                  иконок.</p>
+              </div>
+            </article>
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Фон</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block colors-article__example-block--two-elements"
+                  style="--block-color: #A1A5B0;">
+                  <span class="colors-article__example-block-text colors-article__example-block-text--two-elements"
+                    style="--text-color: #213457">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте неактивные цвета в&nbsp;качестве фоновых,
+                  и&nbsp;не&nbsp;комбинируйте их&nbsp;вместе.</p>
+              </div>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block colors-article__example-block--two-elements"
+                  style="--block-color: #213457;">
+                  <span class="colors-article__example-block-text colors-article__example-block-text--two-elements"
+                    style="--text-color: #213457">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">В&nbsp;качестве фона страницы используйте только основные цвета
+                  фона и&nbsp;светлый либо темно-синий в&nbsp;качестве текста.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>
