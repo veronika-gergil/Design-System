@@ -45,9 +45,9 @@
     pointer-events: none;
     opacity: 0.7;
   }
-}
 
-.button--active {
-  pointer-events: all;
-  opacity: 1;
+  &--active {
+    pointer-events: all;
+    opacity: 1;
+  }
 }

@@ -1,16 +1,10 @@
 const path = require('path');
-const pages = ['index'];
-
-const entries = pages.reduce((total, elem) => ({
-  ...total,
-  [elem]: path.resolve(__dirname, 'source', 'js', `${elem}.js`),
-}), {});
 
 const config = {
   mode: 'production',
-  entry: entries,
+  entry: path.resolve(__dirname, 'source', 'js', 'index.js'),
   output: {
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
   },
 };
 

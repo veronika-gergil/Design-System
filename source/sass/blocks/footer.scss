@@ -6,11 +6,12 @@
 
 .footer__social-list {
   margin-bottom: 80px;
+
+  &--active {
+    display: flex;
+  }
 }
 
-.footer__social-list--active {
-  display: flex;
-}
 
 .footer__info {
   display: flex;
@@ -37,4 +38,3 @@
 .footer__info-item--design {
   max-width: 154px;
 }
-
