@@ -31,69 +31,7 @@
   </header>
   <main class="main-inner">
     <div class="container container--inner">
-      <nav class="inner-navigation">
-        <ul class="inner-navigation__list nav-list list-reset">
-          <li class="nav-list__item">
-            <button class="nav-list__button" data-code="palette">Цвета</button>
-            <div class="nav-list__accordion" data-active="palette">
-              <ul class="inner-nav list-reset">
-                <li class="inner-nav__item">
-                  <a href="#important" class="inner-nav__link">Важность цвета</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#principles" class="inner-nav__link">Принципы</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#main-colors" class="inner-nav__link">Основные цвета</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#secondary-colors" class="inner-nav__link">Вторичные цвета</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#inactive-colors" class="inner-nav__link">Неактивные цвета</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#rules" class="inner-nav__link">Правила применения</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-list__item">
-            <button class="nav-list__button" data-code="fonts">Шрифты</button>
-            <div class="nav-list__accordion" data-active="fonts">
-              <ul class="inner-nav list-reset">
-                <li class="inner-nav__item">
-                  <a href="fonts.html#principles" class="inner-nav__link">Принципы</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#usage" class="inner-nav__link">Применение</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#main-font" class="inner-nav__link">Основной шрифт</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#secondary-font" class="inner-nav__link">Наборный шрифт</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#invalid" class="inner-nav__link">Как нельзя</a>
-                </li>
-                <li class="inner-nav__item">
-                  <a href="#valid" class="inner-nav__link">Как правильно</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-list__item">
-            <button class="nav-list__button">Логотип</button>
-          </li>
-          <li class="nav-list__item">
-            <button class="nav-list__button">Сетка</button>
-          </li>
-          <li class="nav-list__item">
-            <button class="nav-list__button">Гайдлайн</button>
-          </li>
-        </ul>
-      </nav>
+      @@include('./blocks/nav.html')
       <div class="inner-content">
         <section class="important-color main-inner__section">
           <h2 class="main-inner__title title title--middle" id="important">Важность цвета</h2>
@@ -167,7 +105,7 @@
         <section class="main-colors main-inner__section">
           <h2 class="main-inner__title title title--middle" id="main-colors">Основные цвета</h2>
           <h3 class="main-inner__subtitle title title--small">Цвета текста и&nbsp;фона</h3>
-          <div class="main-colors__example main-colors__example--background">
+          <div class="colors-example colors-example--background">
             <div class="color color--big color--border-light" style="--block-color: #e6e6e6;">
               <p class="color__text">HEX: <span class="color__code">#E6E6E6</span></p>
             </div>
@@ -178,7 +116,7 @@
                 инверсия.</p>
             </div>
           </div>
-          <div class="main-colors__example main-colors__example--background">
+          <div class="colors-example colors-example--background">
             <div class="color color--big" style="--block-color: #152034;">
               <p class="color__text">HEX: <span class="color__code">#152034</span></p>
             </div>
@@ -194,7 +132,7 @@
             </div>
           </div>
           <h3 class="main-inner__subtitle title title--small">Цвет фона</h3>
-          <div class="main-colors__example main-colors__example--background">
+          <div class="colors-example colors-example--background">
             <div class="color color--big color--border-dark" style="--block-color: #BDC3D5;">
               <p class="color__text">HEX: <span class="color__code">#BDC3D5</span></p>
             </div>
@@ -202,7 +140,7 @@
               информации, придавая интерфейсу дополнительную глубину.</p>
           </div>
           <h3 class="main-inner__subtitle title title--small">Цвета компонентов</h3>
-          <div class="main-colors__example">
+          <div class="colors-example">
             <div class="color" style="--block-color: #212121;">
               <p class="color__text">HEX: <span class="color__code">#212121</span></p>
             </div>
@@ -227,7 +165,7 @@
           <p class="secondary-colors__text">Мы&nbsp;используем вариацию дополнительных цветов для придачи нашим
             иллюстрациям яркости и&nbsp;уникальности, вовлекая пользователя в&nbsp;процесс и&nbsp;обеспечивая
             спокойствие.</p>
-          <div class="main-colors__example">
+          <div class="colors-example">
             <div class="color" style="--block-color: #3B639C;">
               <p class="color__text">HEX: <span class="color__code">#3B639C</span></p>
             </div>
@@ -261,7 +199,7 @@
           <h2 class="main-inner__title title title--middle" id="inactive-colors">Неактивные цвета</h2>
           <p class="inactive-colors__text">Оттенки серого используются для обозначения неактивных состояний, элементов,
             которые находятся в&nbsp;процессе ожидания или не&nbsp;завершены.</p>
-          <div class="main-colors__example">
+          <div class="colors-example">
             <div class="color" style="--block-color: #D9D9D9;">
               <p class="color__text">HEX: <span class="color__code">#D9D9D9</span></p>
             </div>
@@ -275,25 +213,79 @@
         </section>
         <section class="colors-rules">
           <h2 class="main-inner__title title title--middle" id="rules">Правила применения</h2>
-          <article class="colors-rules__article colors-article">
-            <h3 class=" title title--small">Цвета компонентов</h3>
-            <div class="colors-article__example">
-              <div class="colors-article__example-block" style="--block-color: #212121">
-                <span class="colors-article__example-block-text" style="--text-color: #919CB4">Текст</span>
+          <div class="colors-rules__wrapper">
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Компоненты</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #212121">
+                  <span class="colors-article__example-block-text" style="--text-color: #919CB4">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте цвета компонентов в&nbsp;качестве основных
+                  фонов или текста.</p>
               </div>
-              <span class="main-inner__element main-inner__element--invalid">Неверно</span>
-              <p class="colors-article__example-text">Не&nbsp;используйте цвета компонентов в&nbsp;качестве основных
-                фонов или текста.</p>
-            </div>
-            <div class="colors-article__example">
-              <div class="colors-article__example-block">
-                <span class="colors-article__example-block-text" aria-label="Иконка лотоса"></span>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #D9D9D9;">
+                  <span class="colors-article__example-block-icon-wrapper" aria-label="Иконка лотоса"
+                    style="--text-color: #5B7099;">
+                    <svg class="colors-article__example-block-icon" width="44" height="44">
+                      <use xlink:href="img/icons.svg#lotus"></use>
+                    </svg>
+                  </span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">Цвета компонентов предназначены для иконок и&nbsp;некоторых
+                  иллюстраций</p>
               </div>
-              <span class="main-inner__element main-inner__element--valid">Верно</span>
-              <p class="colors-article__example-text">Цвета компонентов предназначены для иконок и&nbsp;некоторых
-                иллюстраций</p>
-            </div>
-          </article>
+            </article>
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Вторичные</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #374665;">
+                  <span class="colors-article__example-block-text" style="--text-color: #A6B3CE;">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте вторичные цвета в&nbsp;качестве текста или
+                  фона.</p>
+              </div>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block" style="--block-color: #D9D9D9;">
+                  <span class="colors-article__example-block-icon-wrapper" aria-label="Иконка лотоса"
+                    style="--text-color: #AAB6D0;">
+                    <svg class="colors-article__example-block-icon" width="44" height="44">
+                      <use xlink:href="img/icons.svg#lotus"></use>
+                    </svg>
+                  </span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">Вторичные цвета предназначены для иллюстраций и&nbsp;некоторых
+                  иконок.</p>
+              </div>
+            </article>
+            <article class="colors-rules__article colors-article">
+              <h3 class=" title title--small">Фон</h3>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block colors-article__example-block--two-elements"
+                  style="--block-color: #A1A5B0;">
+                  <span class="colors-article__example-block-text colors-article__example-block-text--two-elements"
+                    style="--text-color: #213457">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+                <p class="colors-article__example-text">Не&nbsp;используйте неактивные цвета в&nbsp;качестве фоновых,
+                  и&nbsp;не&nbsp;комбинируйте их&nbsp;вместе.</p>
+              </div>
+              <div class="colors-article__example">
+                <div class="colors-article__example-block colors-article__example-block--two-elements"
+                  style="--block-color: #213457;">
+                  <span class="colors-article__example-block-text colors-article__example-block-text--two-elements"
+                    style="--text-color: #213457">Текст</span>
+                </div>
+                <span class="main-inner__element main-inner__element--valid">Верно</span>
+                <p class="colors-article__example-text">В&nbsp;качестве фона страницы используйте только основные цвета
+                  фона и&nbsp;светлый либо темно-синий в&nbsp;качестве текста.</p>
+              </div>
+            </article>
+          </div>
         </section>
       </div>
     </div>
