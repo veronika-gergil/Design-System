@@ -164,7 +164,7 @@
             обеспечивает хороший контраст, что особенно важно для пользователей с&nbsp;ограниченными зрительными
             возможностями.</p>
         </section>
-        <section class="main-colors">
+        <section class="main-colors main-inner__section">
           <h2 class="main-inner__title title title--middle" id="main-colors">Основные цвета</h2>
           <h3 class="main-inner__subtitle title title--small">Цвета текста и&nbsp;фона</h3>
           <div class="main-colors__example main-colors__example--background">
@@ -203,13 +203,13 @@
           </div>
           <h3 class="main-inner__subtitle title title--small">Цвета компонентов</h3>
           <div class="main-colors__example">
-            <div class="color color--big" style="--block-color: #212121;">
+            <div class="color" style="--block-color: #212121;">
               <p class="color__text">HEX: <span class="color__code">#212121</span></p>
             </div>
-            <div class="color color--big" style="--block-color: #919CB4;">
+            <div class="color" style="--block-color: #919CB4;">
               <p class="color__text">HEX: <span class="color__code">#919CB4</span></p>
             </div>
-            <div class="color color--big" style="--block-color: #5B7099;">
+            <div class="color" style="--block-color: #5B7099;">
               <p class="color__text">HEX: <span class="color__code">#5B7099</span></p>
             </div>
           </div>
@@ -221,6 +221,79 @@
             <li class="main-colors__list-item">Голубой цвет применяется для создания мягкого контраста фона некоторых
               элементов, таких как иконок и&nbsp;для придания им&nbsp;воздушности.</li>
           </ol>
+        </section>
+        <section class="main-inner__section secondary-colors">
+          <h2 class="main-inner__title title title--middle" id="secondary-colors">Вторичные цвета</h2>
+          <p class="secondary-colors__text">Мы&nbsp;используем вариацию дополнительных цветов для придачи нашим
+            иллюстрациям яркости и&nbsp;уникальности, вовлекая пользователя в&nbsp;процесс и&nbsp;обеспечивая
+            спокойствие.</p>
+          <div class="main-colors__example">
+            <div class="color" style="--block-color: #3B639C;">
+              <p class="color__text">HEX: <span class="color__code">#3B639C</span></p>
+            </div>
+            <div class="color" style="--block-color: #FF91A7;">
+              <p class="color__text">HEX: <span class="color__code">#FF91A7</span></p>
+            </div>
+            <div class="color" style="--block-color: #EA5B44;">
+              <p class="color__text">HEX: <span class="color__code">#EA5B44</span></p>
+            </div>
+            <div class="color" style="--block-color: #0E1F33;">
+              <p class="color__text">HEX: <span class="color__code">#0E1F33</span></p>
+            </div>
+            <div class="color" style="--block-color: #000000;">
+              <p class="color__text">HEX: <span class="color__code">#000000</span></p>
+            </div>
+            <div class="color" style="--block-color: #FF9660;">
+              <p class="color__text">HEX: <span class="color__code">#FF9660</span></p>
+            </div>
+            <div class="color" style="--block-color: #C03F4C;">
+              <p class="color__text">HEX: <span class="color__code">#C03F4C</span></p>
+            </div>
+            <div class="color" style="--block-color: #ECBD26;">
+              <p class="color__text">HEX: <span class="color__code">#C03F4C</span></p>
+            </div>
+            <div class="color" style="--block-color: #5B7099;">
+              <p class="color__text">HEX: <span class="color__code">#5B7099</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="inactive-colors main-inner__section">
+          <h2 class="main-inner__title title title--middle" id="inactive-colors">Неактивные цвета</h2>
+          <p class="inactive-colors__text">Оттенки серого используются для обозначения неактивных состояний, элементов,
+            которые находятся в&nbsp;процессе ожидания или не&nbsp;завершены.</p>
+          <div class="main-colors__example">
+            <div class="color" style="--block-color: #D9D9D9;">
+              <p class="color__text">HEX: <span class="color__code">#D9D9D9</span></p>
+            </div>
+            <div class="color" style="--block-color: #A1A5B0;">
+              <p class="color__text">HEX: <span class="color__code">#A1A5B0</span></p>
+            </div>
+            <div class="color" style="--block-color: #767980;">
+              <p class="color__text">HEX: <span class="color__code">#767980</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="colors-rules">
+          <h2 class="main-inner__title title title--middle" id="rules">Правила применения</h2>
+          <article class="colors-rules__article colors-article">
+            <h3 class=" title title--small">Цвета компонентов</h3>
+            <div class="colors-article__example">
+              <div class="colors-article__example-block" style="--block-color: #212121">
+                <span class="colors-article__example-block-text" style="--text-color: #919CB4">Текст</span>
+              </div>
+              <span class="main-inner__element main-inner__element--invalid">Неверно</span>
+              <p class="colors-article__example-text">Не&nbsp;используйте цвета компонентов в&nbsp;качестве основных
+                фонов или текста.</p>
+            </div>
+            <div class="colors-article__example">
+              <div class="colors-article__example-block">
+                <span class="colors-article__example-block-text" aria-label="Иконка лотоса"></span>
+              </div>
+              <span class="main-inner__element main-inner__element--valid">Верно</span>
+              <p class="colors-article__example-text">Цвета компонентов предназначены для иконок и&nbsp;некоторых
+                иллюстраций</p>
+            </div>
+          </article>
         </section>
       </div>
     </div>

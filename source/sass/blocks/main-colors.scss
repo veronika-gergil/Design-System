@@ -1,7 +1,7 @@
 .main-colors__example {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 37px;
+  gap: 20px 37px;
 
   &--background {
     grid-template-columns: 260px 1fr;
