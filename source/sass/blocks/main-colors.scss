@@ -11,6 +11,6 @@
   margin: 0;
 }
 
-.main-colors__list-item {
+.main-colors__list-item:not(:last-child) {
   margin: 0 0 15px 0;
 }

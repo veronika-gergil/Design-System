@@ -1,5 +1,5 @@
 .inner-nav {
-  padding: 0 0 0 35px;
+  padding: 0 0 0 31px;
   overflow: hidden;
 }
 
@@ -18,11 +18,30 @@
 
   &::before {
     position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
+    bottom: -1px;
+    left: 50%;
+    width: 0;
     height: 1px;
     content: "";
     background-color: var(--secondary-text-color);
+    opacity: 0;
+    transition:
+      width 0.5s ease,
+      opacity 0.5s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::before,
+  &.active::before {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px dashed var(--secondary-text-color);
   }
 }
