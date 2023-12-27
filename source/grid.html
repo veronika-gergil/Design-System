@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, сетка,  HTML, CSS, студенческий проект, ">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Сетка</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <div class="header__content">
+          <h1 class="header__title title">Сетка</h1>
+          <p class="header__text">Сетки отвечают за&nbsp;расположение и&nbsp;организацию всех компонентов
+            пользовательского интерфейса&nbsp;&mdash; меню, кнопки, меню, сайдбар, разделы контента и&nbsp;другие
+            визуальные элементы.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/Flowerdude.webp 1x,img/Flowerdude@2x.webp 2x">
+          <img class="header__image" src="img/Flowerdude.png" srcset="img/Flowerdude@2x.png 2x"
+            alt="Парень в синей кофте и с желтым цветком в руке" width="412" height="412">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="grid-concept main-inner__section observed-section" id="concept">
+          <h2 class="main-inner__title title title--middle">Концепция сетки</h2>
+          <p class="grid-concept__text">Для обеспечения структурированности и&nbsp;легкости восприятия контента
+            на&nbsp;странице мы&nbsp;используем сетку, основанную на&nbsp;12&nbsp;колонках. Это обеспечивает гибкость
+            распределения элементов и&nbsp;и&nbsp;создает удобный, интуитивно понятный горизонтальный ритм.</p>
+          <h3 class="main-inner__subtitle title title--small">Преимущества</h3>
+          <ul class="grid-concept__list list-reset">
+            <li class="grid-concept__list-item">Структурирует контент, упрощая восприятие.</li>
+            <li class="grid-concept__list-item">Гибкость при внесении изменений.</li>
+            <li class="grid-concept__list-item">Обеспечивает единообразие и&nbsp;гармонию.</li>
+          </ul>
+          <!--
+            <picture class="important-color__block-picture">
+              <source type="image/webp" srcset="img/Medit.webp 1x,img/Medit@2x.webp 2x">
+              <img class="important-color__block-image" src="img/Medit.png" srcset="img/Medit@2x.png 2x"
+                alt="Темноволосая девушка сидит в позе лотоса и медитирует" width="253" height="216">
+            </picture>
+          </div> -->
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>

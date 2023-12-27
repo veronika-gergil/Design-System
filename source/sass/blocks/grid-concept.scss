@@ -1,0 +1,38 @@
+.grid-concept__text {
+  margin: 0 0 40px 0;
+}
+
+.grid-concept .main-inner__subtitle {
+  margin: 0;
+}
+
+.grid-concept__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 106px 0 0 0;
+  margin: 0;
+  counter-reset: counter 0;
+}
+
+.grid-concept__list-item {
+  position: relative;
+  font-size: 1.2222rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  counter-increment: counter 1;
+
+  &::before {
+    position: absolute;
+    top: -68px;
+    left: -33px;
+    font-family: "Srbija Sans", sans-serif;
+    font-size: 5.5556rem;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--secondary-border-color);
+    content: counter(counter);
+    opacity: 0.3;
+  }
+}
