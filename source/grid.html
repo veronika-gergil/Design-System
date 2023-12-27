@@ -36,7 +36,8 @@
       <div class="inner-content">
         <section class="grid-concept main-inner__section observed-section" id="concept">
           <h2 class="main-inner__title title title--middle">Концепция сетки</h2>
-          <p class="grid-concept__text">Для обеспечения структурированности и&nbsp;легкости восприятия контента
+          <p class="grid-concept__text main-inner__title">Для обеспечения структурированности и&nbsp;легкости восприятия
+            контента
             на&nbsp;странице мы&nbsp;используем сетку, основанную на&nbsp;12&nbsp;колонках. Это обеспечивает гибкость
             распределения элементов и&nbsp;и&nbsp;создает удобный, интуитивно понятный горизонтальный ритм.</p>
           <h3 class="main-inner__subtitle title title--small">Преимущества</h3>
@@ -52,6 +53,77 @@
                 alt="Темноволосая девушка сидит в позе лотоса и медитирует" width="253" height="216">
             </picture>
           </div> -->
+        </section>
+        <section class="columng-grid main-inner__section observed-section" id="column">
+          <h2 class="main-inner__title title title--middle">Колонки</h2>
+          <p class="columng-grid__text main-inner__subtitle">Содержимое контента выравнивается по&nbsp;12-ти столбцам
+            сетки, для обеспечения
+            порядка и&nbsp;легкого интуитивно понятного восприятия.</p>
+          <picture class="columng-grid__picture">
+            <source type="image/webp" srcset="img/column.webp 1x,img/column@2x.webp 2x">
+            <img class="columng-grid__image" src="img/column.png" srcset="img/column@2x.png 2x"
+              alt="Содержимое нашего контента находится в пределах 12 колонок" width="760" height="570">
+          </picture>
+        </section>
+        <section class="gap-grid main-inner__section observed-section" id="gap">
+          <h2 class="main-inner__title title title--middle">Гэпы</h2>
+          <p class="gap-grid__text main-inner__subtitle">Размер внутренних отступов между колонками в&nbsp;контейнере
+            фиксирован и&nbsp;равен 30px.</p>
+          <picture class="gap-grid__picture">
+            <source type="image/webp" srcset="img/gap.webp 1x,img/gap@2x.webp 2x">
+            <img class="gap-grid__image" src="img/gap.png" srcset="img/gap@2x.png 2x"
+              alt="Отступ между колонками равен 30 пикселям" width="760" height="570">
+          </picture>
+        </section>
+        <section class="padding-grid main-inner__section observed-section" id="padding">
+          <h2 class="main-inner__title title title--middle">Паддинг</h2>
+          <p class="padding-grid__text main-inner__subtitle">Пространство между внешними столбцами и&nbsp;контейнером
+            неизменно всегда и&nbsp;равно 60px.</p>
+          <picture class="padding-grid__picture">
+            <source type="image/webp" srcset="img/padding.webp 1x,img/padding@2x.webp 2x">
+            <img class="padding-grid__image" src="img/padding.png" srcset="img/padding@2x.png 2x"
+              alt="Паддинг от контейнера до края экрана равен 60 пикселям" width="760" height="570">
+          </picture>
+        </section>
+        <section class="width-grid main-inner__section observed-section" id="width">
+          <h2 class="main-inner__title title title--middle">Размеры</h2>
+          <p class="width-grid__text main-inner__subtitle">Размер контейтера определяет базовую сетку, ширина экрана
+            равна 1160px.</p>
+          <picture class="width-grid__picture">
+            <source type="image/webp" srcset="img/width.webp 1x,img/width@2x.webp 2x">
+            <img class="width-grid__image" src="img/width.png" srcset="img/width@2x.png 2x"
+              alt="Контентная область сайта равна 1160 пикселям" width="760" height="570">
+          </picture>
+        </section>
+        <section class="menu-grid main-inner__section observed-section" id="menu">
+          <h2 class="main-inner__title title title--middle">Меню</h2>
+          <p class="menu-grid__text main-inner__subtitle">Меню занимает размер сетки в&nbsp;ширину в&nbsp;12-ти
+            столбцов&nbsp;&mdash; 1160px.</p>
+          <picture class="menu-grid__picture">
+            <source type="image/webp" srcset="img/menu.webp 1x,img/menu@2x.webp 2x">
+            <img class="menu-grid__image" src="img/menu.png" srcset="img/menu@2x.png 2x"
+              alt="Меню занимает всю контентную область" width="760" height="570">
+          </picture>
+        </section>
+        <section class="content-grid main-inner__section observed-section" id="content">
+          <h2 class="main-inner__title title title--middle">Расположение контента</h2>
+          <p class="content-grid__text main-inner__subtitle">Контент располагается на сетке, согласно стоблцам.</p>
+          <picture class="content-grid__picture">
+            <source type="image/webp" srcset="img/content.webp 1x,img/content@2x.webp 2x">
+            <img class="content-grid__image" src="img/content.png" srcset="img/content@2x.png 2x"
+              alt="Один блок занимает всю ширину, под ним 2 рядом" width="760" height="570">
+          </picture>
+        </section>
+        <section class="fixed-grid main-inner__section observed-section" id="fixed">
+          <h2 class="main-inner__title title title--middle">Фиксированный контент</h2>
+          <p class="fixed-grid__text main-inner__subtitle">Боковая навигационная панель имеет фиксированную ширину
+            и&nbsp;не&nbsp;вписывается в&nbsp;сетку. Если нужно разместить контент относительно нее, используем
+            в&nbsp;качестве отступа размер желоба умноженный на&nbsp;2&nbsp;&mdash; 80px.</p>
+          <picture class="fixed-grid__picture">
+            <source type="image/webp" srcset="img/fixedContent.webp 1x,img/fixedContent@2x.webp 2x">
+            <img class="fixed-grid__image" src="img/fixedContent.png" srcset="img/fixedContent@2x.png 2x"
+              alt="Меню сбоку имеет фиксированный размер, а расстояние от него до центральной части равно 97 пискелей" width="760" height="570">
+          </picture>
         </section>
       </div>
     </div>
