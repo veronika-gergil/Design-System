@@ -4,8 +4,9 @@
   margin: 0 auto;
 
   &--inner {
+    position: relative;
     display: grid;
-    grid-template-columns: 268px 1fr;
-    gap: 130px;
+    grid-template-columns: 300px 1fr;
+    gap: 97px;
   }
 }

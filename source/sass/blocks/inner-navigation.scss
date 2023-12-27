@@ -1,6 +1,8 @@
 .inner-navigation {
+  position: sticky;
+  top: 60px;
   align-self: start;
-  padding: 31px 44px 39px 26px;
+  padding: 33px 52px 41px 29px;
   border: 2px solid var(--secondary-text-color);
   border-radius: 20px;
 }
