@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, бордеры, HTML, CSS, студенческий проект">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Бордеры</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <div class="header__content">
+          <h1 class="header__title title">Бордеры</h1>
+          <p class="header__text">Healify использует скругление углов и&nbsp;толщины бордера для различных компонентов.
+            Значения радиусов углов равны 50,30 и&nbsp;20. Значения толщины бордера равны 5, 3, 2. Эти показатели
+            зависят от&nbsp;размера компонента, к&nbsp;которому они применяются.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/sleepingDude.webp 1x,img/sleepingDude@2x.webp 2x">
+          <img class="header__image" src="img/sleepingDude.png" srcset="img/sleepingDude@2x.png 2x"
+            alt="Девушка, дремлющая на своей руке" width="412" height="364">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="radius-principle main-inner__section observed-section" id="radius-principle">
+          <h2 class="main-inner__title title title--middle">Принципы радиуса</h2>
+          <h3 class="main-inner__subtitle title title--small">Значения</h3>
+          <p class="radius-principle__text main-inner__subtitle">Компоненты большего размера имеют больший радиус
+            скругления. Наше руководство дает рекомендации, как применять значения радиуса для различных элементов
+            интерфейса.</p>
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__head-cell">Значения радиуса угла</th>
+                <th class="table__head-cell">Применение</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__cell table__cell--first">50px</td>
+                <td class="table__cell table__cell--first">Большие контейнеры, такие как карточки описания и&nbsp;формы.
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">30px</td>
+                <td class="table__cell">Средние контейнеры, такие как карточки достижений, текстовые поля, а&nbsp;также
+                  кнопки.</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell table__cell--last">20px</td>
+                <td class="table__cell table__cell--last">Маленькие контейнеры, такие как прогресс бары и&nbsp;сайдбар.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="usage-radius main-inner__section observed-section" id="usage-radius">
+          <h2 class="main-inner__title title title--middle">Примеры применения</h2>
+          <h3 class="main-inner__subtitle title title--small">50px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Большие компоненты, такие как карточки, формы
+            и&nbsp;большие блоки текста и&nbsp;модальные окна имеют радиус скругления 50px.</p>
+          <picture class="usage-radius__picture main-inner__title">
+            <source type="image/webp" srcset="img/modal.webp 1x,img/modal@2x.webp 2x">
+            <img class="usage-radius__image" src="img/modal.png" srcset="img/modal@2x.png 2x" alt="Модальное окно"
+              width="295" height="354">
+          </picture>
+          <h3 class="main-inner__subtitle title title--small">30px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Средние компоненты, такие как карточки достижений,
+            текстовые поля, а&nbsp;также все кнопки имеют радиус скругления 30px.</p>
+          <button class="button button--usage-radius main-inner__title">Кнопка</button>
+          <h3 class="main-inner__subtitle title title--small">20px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Маленькие компоненты, такие как прогресс бары, сайдбар,
+            а&nbsp;также вложенные компоненты имеют радиус скругления 20px.</p>
+          <picture class="usage-radius__picture">
+            <source type="image/webp" srcset="img/border-20.webp 1x,img/border-20@2x.webp 2x">
+            <img class="usage-radius__image" src="img/border-20.png" srcset="img/border-20@2x.png 2x"
+              alt="Маленькие компоненты имеют border-radius 20px" width="373" height="348">
+          </picture>
+        </section>
+        <section class="border-principle main-inner__section observed-section" id="border-principle">
+          <h2 class="main-inner__title title title--middle">Принципы бордера</h2>
+          <h3 class="main-inner__subtitle title title--small">Значения</h3>
+          <p class="border-principle__text main-inner__subtitle">Толщина линии бордера зависит от&nbsp;размеров
+            контейнера. Всего значений два: 3px и&nbsp;2px. Ниже представлены рекомендации по&nbsp;применению разных
+            значений толщин для различных элементов интерфейса.</p>
+        </section>
+        <section class="usage-border main-inner__section observed-section" id="usage-border">
+          <h2 class="main-inner__title title title--middle">Примеры применения</h2>
+          <h3 class="main-inner__subtitle title title--small">3px</h3>
+          <p class="usage-border__text main-inner__subtitle">Большие компоненты, занимающие в&nbsp;сетке
+            8&nbsp;колонок имеют толщину бордера 3px, а&nbsp;также все кнопки.</p>
+          <div class="usage-border__example main-inner__title" aria-hidden="true">
+            <div class="usage-border__example-top">
+              <div class="usage-border__example-top-element"></div>
+              <div class="usage-border__example-top-element"></div>
+            </div>
+            <div class="usage-border__example__bottom"></div>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">2px</h3>
+          <p class="usage-border__text main-inner__subtitle">Компоненты, занимающие в&nbsp;сетке менее
+            8&nbsp;колонок имеют толщину бордера 2px. Например карточки, текстовые блоки в&nbsp;формах и&nbsp;сайдбар.
+          </p>
+          <input class="form-area__input usage-border__input" placeholder="Ваше имя" type="text" id="name" name="name"
+            title="Только буквы разрешены" pattern="^[A-Za-zА-Яа-я ]+$" autocomplete="name">
+          <label for="name" class="form-area__label visually-hidden">Имя</label>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>

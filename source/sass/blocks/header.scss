@@ -7,9 +7,8 @@
 
 .header__top {
   display: grid;
-  grid-template-columns: minmax(100px, min-content) 1fr;
+  grid-template-columns: minmax(87px, min-content) 1fr;
   gap: 30px;
-  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -21,22 +20,12 @@
 }
 
 .header__logo-link {
+  line-height: 0;
   color: var(--primary-text-color);
 
   &[href] {
     position: relative;
     transition: opacity 0.5s ease;
-
-    &::before {
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      width: 90px;
-      height: 31px;
-      content: "";
-      border: 1px dashed var(--primary-text-color);
-      opacity: 0;
-    }
 
     &:hover {
       opacity: 0.7;
@@ -46,8 +35,8 @@
       outline: none;
     }
 
-    &:focus-visible::before {
-      opacity: 1;
+    &:focus-visible {
+      outline: 1px dashed var(--primary-text-color);
     }
   }
 }
@@ -60,18 +49,6 @@
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
   transition: color 0.5s ease;
-
-  &::before {
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 1px;
-    content: "";
-    background-color: var(--primary-text-color);
-    transition: width 0.5s ease;
-    transform: translateX(-50%);
-  }
 
   &:hover::before {
     width: 100%;

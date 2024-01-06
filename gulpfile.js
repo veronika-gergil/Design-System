@@ -162,7 +162,7 @@ gulp.task('watcher', () => {
   gulp.watch('./source/js/**/*.js', gulp.series('scripts'))
   gulp.watch('./source/blocks/*.html', gulp.series('html', 'reload'))
   gulp.watch('./source/*.html', gulp.series('html', 'reload'))
-  gulp.watch('./source/img/*.{png, jpeg, jpg, svg}', gulp.series('copy', 'reload'))
+  gulp.watch('./source/img/*.{png, jpeg, jpg, svg}', gulp.series('copyImages', 'createWebp', 'reload'))
   gulp.watch('./source/img/icons/*.svg', gulp.series('sprite', 'reload'))
 })
 

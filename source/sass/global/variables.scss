@@ -15,10 +15,13 @@
   --span-element-color: #fefefe;
   --valid-color: #157725;
   --invalid-color: #b60c35;
-  --secondary-border-color: #5b7099;
+  --secondary-border-color: #49608c;
   --card-background: #d9d9d9;
   --invalid-text-color: #a6b3ce;
   --color-card-text-color: #515151;
+  --table-border-color: #49608c;
+  --table-text-header-color: #e6e6e6;
+  --border-principle-gradient: rgba(145, 156, 180, 0.4);
 }
 
 .dark {
@@ -27,6 +30,7 @@
   --primary-text-color: #e6e6e6;
   --like-color: var(--primary-background-color);
   --box-shadow-card: 0px 4px 15px 6px #a1aac4;
+  --table-border-color: #213457;
 
   .social-list__link {
     color: var(--primary-background-color);
@@ -56,5 +60,17 @@
 
   .color--border-dark::before {
     outline-color: var(--secondary-text-color);
+  }
+
+  .button--usage-radius {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-text-color);
+    border-color: transparent;
+
+    &:hover {
+      color: var(--secondary-text-color);
+      background-color: transparent;
+      border-color: var(--secondary-text-color);
+    }
   }
 }
