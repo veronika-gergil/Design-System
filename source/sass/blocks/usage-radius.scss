@@ -1,0 +1,10 @@
+.usage-radius__picture {
+  display: inline-block;
+  line-height: 0;
+
+  &:first-of-type {
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-card);
+    transition: box-shadow 0.5s ease;
+  }
+}

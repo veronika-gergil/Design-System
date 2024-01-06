@@ -17,28 +17,13 @@
     border-color 0.5s ease,
     opacity 0.5s ease;
 
-  &::before {
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    content: "";
-    border: 1px dashed var(--primary-text-color);
-    opacity: 0;
-  }
-
   &:hover {
     color: var(--secondary-background-color);
     background-color: var(--primary-text-color);
   }
 
   &:focus-visible {
-    outline: none;
-  }
-
-  &:focus-visible::before {
-    opacity: 1;
+    outline: 1px dashed var(--primary-text-color);
   }
 
   &:disabled {
@@ -49,5 +34,21 @@
   &--active {
     pointer-events: all;
     opacity: 1;
+  }
+
+
+  &--usage-radius {
+    display: inline-block;
+    padding: 19px 66px;
+    font-size: 1.2222rem;
+    color: var(--secondary-text-color);
+    // background-color: var(--secondary-background-color);
+
+    &:hover {
+      color: var(--primary-background-color);
+      background-color: var(--secondary-text-color);
+      // border-color: var(--secondary-text-color);
+      // border: 3px solid var(--primary-text-color);
+    }
   }
 }

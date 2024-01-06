@@ -34,90 +34,87 @@
     <div class="container container--inner">
       @@include('./blocks/nav.html')
       <div class="inner-content">
-        <section class="grid-concept main-inner__section observed-section" id="concept">
-          <h2 class="main-inner__title title title--middle">Концепция сетки</h2>
-          <p class="grid-concept__text main-inner__title">Для обеспечения структурированности и&nbsp;легкости восприятия
-            контента
-            на&nbsp;странице мы&nbsp;используем сетку, основанную на&nbsp;12&nbsp;колонках. Это обеспечивает гибкость
-            распределения элементов и&nbsp;и&nbsp;создает удобный, интуитивно понятный горизонтальный ритм.</p>
-          <h3 class="main-inner__subtitle title title--small">Преимущества</h3>
-          <ul class="grid-concept__list list-reset">
-            <li class="grid-concept__list-item">Структурирует контент, упрощая восприятие.</li>
-            <li class="grid-concept__list-item">Гибкость при внесении изменений.</li>
-            <li class="grid-concept__list-item">Обеспечивает единообразие и&nbsp;гармонию.</li>
-          </ul>
+        <section class="radius-principle main-inner__section observed-section" id="radius-principle">
+          <h2 class="main-inner__title title title--middle">Принципы радиуса</h2>
+          <h3 class="main-inner__subtitle title title--small">Значения</h3>
+          <p class="radius-principle__text main-inner__subtitle">Компоненты большего размера имеют больший радиус
+            скругления. Наше руководство дает рекомендации, как применять значения радиуса для различных элементов
+            интерфейса.</p>
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__head-cell">Значения радиуса угла</th>
+                <th class="table__head-cell">Применение</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__cell table__cell--first">50px</td>
+                <td class="table__cell table__cell--first">Большие контейнеры, такие как карточки описания и&nbsp;формы.
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">30px</td>
+                <td class="table__cell">Средние контейнеры, такие как карточки достижений, текстовые поля, а&nbsp;также
+                  кнопки.</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell table__cell--last">20px</td>
+                <td class="table__cell table__cell--last">Маленькие контейнеры, такие как прогресс бары и&nbsp;сайдбар.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-        <section class="columng-grid main-inner__section observed-section" id="column">
-          <h2 class="main-inner__title title title--middle">Колонки</h2>
-          <p class="columng-grid__text main-inner__subtitle">Содержимое контента выравнивается по&nbsp;12-ти столбцам
-            сетки, для обеспечения
-            порядка и&nbsp;легкого интуитивно понятного восприятия.</p>
-          <picture class="columng-grid__picture">
-            <source type="image/webp" srcset="img/column.webp 1x,img/column@2x.webp 2x">
-            <img class="columng-grid__image" src="img/column.png" srcset="img/column@2x.png 2x"
-              alt="Содержимое нашего контента находится в пределах 12 колонок" width="760" height="570">
+        <section class="usage-radius main-inner__section observed-section" id="usage-radius">
+          <h2 class="main-inner__title title title--middle">Примеры применения</h2>
+          <h3 class="main-inner__subtitle title title--small">50px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Большие компоненты, такие как карточки, формы
+            и&nbsp;большие блоки текста и&nbsp;модальные окна имеют радиус скругления 50px.</p>
+          <picture class="usage-radius__picture main-inner__title">
+            <source type="image/webp" srcset="img/modal.webp 1x,img/modal@2x.webp 2x">
+            <img class="usage-radius__image" src="img/modal.png" srcset="img/modal@2x.png 2x" alt="Модальное окно"
+              width="295" height="354">
+          </picture>
+          <h3 class="main-inner__subtitle title title--small">30px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Средние компоненты, такие как карточки достижений,
+            текстовые поля, а&nbsp;также все кнопки имеют радиус скругления 30px.</p>
+          <button class="button button--usage-radius main-inner__title">Кнопка</button>
+          <h3 class="main-inner__subtitle title title--small">20px</h3>
+          <p class="usage-radius__text main-inner__subtitle">Маленькие компоненты, такие как прогресс бары, сайдбар,
+            а&nbsp;также вложенные компоненты имеют радиус скругления 20px.</p>
+          <picture class="usage-radius__picture">
+            <source type="image/webp" srcset="img/border-20.webp 1x,img/border-20@2x.webp 2x">
+            <img class="usage-radius__image" src="img/border-20.png" srcset="img/border-20@2x.png 2x"
+              alt="Маленькие компоненты имеют border-radius 20px" width="373" height="348">
           </picture>
         </section>
-        <section class="gap-grid main-inner__section observed-section" id="gap">
-          <h2 class="main-inner__title title title--middle">Гэпы</h2>
-          <p class="gap-grid__text main-inner__subtitle">Размер внутренних отступов между колонками в&nbsp;контейнере
-            фиксирован и&nbsp;равен 30px.</p>
-          <picture class="gap-grid__picture">
-            <source type="image/webp" srcset="img/gap.webp 1x,img/gap@2x.webp 2x">
-            <img class="gap-grid__image" src="img/gap.png" srcset="img/gap@2x.png 2x"
-              alt="Отступ между колонками равен 30 пикселям" width="760" height="570">
-          </picture>
+        <section class="border-principle main-inner__section observed-section" id="border-principle">
+          <h2 class="main-inner__title title title--middle">Принципы бордера</h2>
+          <h3 class="main-inner__subtitle title title--small">Значения</h3>
+          <p class="border-principle__text main-inner__subtitle">Толщина линии бордера зависит от&nbsp;размеров
+            контейнера. Всего значений два: 3px и&nbsp;2px. Ниже представлены рекомендации по&nbsp;применению разных
+            значений толщин для различных элементов интерфейса.</p>
         </section>
-        <section class="padding-grid main-inner__section observed-section" id="padding">
-          <h2 class="main-inner__title title title--middle">Паддинг</h2>
-          <p class="padding-grid__text main-inner__subtitle">Пространство между внешними столбцами и&nbsp;контейнером
-            неизменно всегда и&nbsp;равно 60px.</p>
-          <picture class="padding-grid__picture">
-            <source type="image/webp" srcset="img/padding.webp 1x,img/padding@2x.webp 2x">
-            <img class="padding-grid__image" src="img/padding.png" srcset="img/padding@2x.png 2x"
-              alt="Паддинг от контейнера до края экрана равен 60 пикселям" width="760" height="570">
-          </picture>
-        </section>
-        <section class="width-grid main-inner__section observed-section" id="width">
-          <h2 class="main-inner__title title title--middle">Размеры</h2>
-          <p class="width-grid__text main-inner__subtitle">Размер контейтера определяет базовую сетку, ширина экрана
-            равна 1160px.</p>
-          <picture class="width-grid__picture">
-            <source type="image/webp" srcset="img/width.webp 1x,img/width@2x.webp 2x">
-            <img class="width-grid__image" src="img/width.png" srcset="img/width@2x.png 2x"
-              alt="Контентная область сайта равна 1160 пикселям" width="760" height="570">
-          </picture>
-        </section>
-        <section class="menu-grid main-inner__section observed-section" id="menu">
-          <h2 class="main-inner__title title title--middle">Меню</h2>
-          <p class="menu-grid__text main-inner__subtitle">Меню занимает размер сетки в&nbsp;ширину в&nbsp;12-ти
-            столбцов&nbsp;&mdash; 1160px.</p>
-          <picture class="menu-grid__picture">
-            <source type="image/webp" srcset="img/menu.webp 1x,img/menu@2x.webp 2x">
-            <img class="menu-grid__image" src="img/menu.png" srcset="img/menu@2x.png 2x"
-              alt="Меню занимает всю контентную область" width="760" height="570">
-          </picture>
-        </section>
-        <section class="content-grid main-inner__section observed-section" id="content">
-          <h2 class="main-inner__title title title--middle">Расположение контента</h2>
-          <p class="content-grid__text main-inner__subtitle">Контент располагается на сетке, согласно стоблцам.</p>
-          <picture class="content-grid__picture">
-            <source type="image/webp" srcset="img/content.webp 1x,img/content@2x.webp 2x">
-            <img class="content-grid__image" src="img/content.png" srcset="img/content@2x.png 2x"
-              alt="Один блок занимает всю ширину, под ним 2 рядом" width="760" height="570">
-          </picture>
-        </section>
-        <section class="fixed-grid main-inner__section observed-section" id="fixed">
-          <h2 class="main-inner__title title title--middle">Фиксированный контент</h2>
-          <p class="fixed-grid__text main-inner__subtitle">Боковая навигационная панель имеет фиксированную ширину
-            и&nbsp;не&nbsp;вписывается в&nbsp;сетку. Если нужно разместить контент относительно нее, используем
-            в&nbsp;качестве отступа размер желоба умноженный на&nbsp;2&nbsp;&mdash; 80px.</p>
-          <picture class="fixed-grid__picture">
-            <source type="image/webp" srcset="img/fixedContent.webp 1x,img/fixedContent@2x.webp 2x">
-            <img class="fixed-grid__image" src="img/fixedContent.png" srcset="img/fixedContent@2x.png 2x"
-              alt="Меню сбоку имеет фиксированный размер, а расстояние от него до центральной части равно 97 пискелей"
-              width="760" height="570">
-          </picture>
+        <section class="usage-border main-inner__section observed-section" id="usage-border">
+          <h2 class="main-inner__title title title--middle">Примеры применения</h2>
+          <h3 class="main-inner__subtitle title title--small">3px</h3>
+          <p class="usage-border__text main-inner__subtitle">Большие компоненты, занимающие в&nbsp;сетке
+            8&nbsp;колонок имеют толщину бордера 3px, а&nbsp;также все кнопки.</p>
+          <div class="usage-border__example main-inner__title" aria-hidden="true">
+            <div class="usage-border__example-top">
+              <div class="usage-border__example-top-element"></div>
+              <div class="usage-border__example-top-element"></div>
+            </div>
+            <div class="usage-border__example__bottom"></div>
+          </div>
+          <h3 class="main-inner__subtitle title title--small">2px</h3>
+          <p class="usage-border__text main-inner__subtitle">Компоненты, занимающие в&nbsp;сетке менее
+            8&nbsp;колонок имеют толщину бордера 2px. Например карточки, текстовые блоки в&nbsp;формах и&nbsp;сайдбар.
+          </p>
+          <input class="form-area__input usage-border__input" placeholder="Ваше имя" type="text" id="name" name="name"
+            title="Только буквы разрешены" pattern="^[A-Za-zА-Яа-я ]+$" autocomplete="name">
+          <label for="name" class="form-area__label visually-hidden">Имя</label>
         </section>
       </div>
     </div>

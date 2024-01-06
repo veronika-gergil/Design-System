@@ -30,16 +30,6 @@
     transform: rotate(-90deg);
   }
 
-  &::before {
-    position: absolute;
-    top: -2px;
-    left: -4px;
-    width: 105%;
-    height: 105%;
-    content: "";
-    border: 1px dashed var(--secondary-text-color);
-    opacity: 0;
-  }
 
   &:hover::after,
   &.active::after {
@@ -50,8 +40,8 @@
     outline: none;
   }
 
-  &:focus-visible::before {
-    opacity: 1;
+  &:focus-visible {
+    outline: 1px dashed var(--secondary-text-color);
   }
 }
 

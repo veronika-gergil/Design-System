@@ -1,0 +1,40 @@
+.usage-border {
+  margin: 0 0 120px 0;
+}
+
+.usage-border__example {
+  height: 289px;
+  padding: 50px 71px 59px 71px;
+  background: repeating-linear-gradient(to right, var(--border-principle-gradient) 0, var(--border-principle-gradient) 71px, transparent 71px, transparent 99px);
+  border: 3px solid var(--table-border-color);
+  border-radius: 30px;
+  transition: border-color 0.5s ease;
+}
+
+.usage-border__example-top {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.usage-border__example__bottom,
+.usage-border__example-top-element {
+  background-color: var(--table-border-color);
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.usage-border__example-top-element {
+  width: 296px;
+  height: 67px;
+  margin: 0 0 24px 0;
+}
+
+.usage-border__example__bottom {
+  height: 89px;
+}
+
+
+.usage-border__input {
+  width: 500px;
+}
