@@ -1,0 +1,8 @@
+.tasks-list {
+  padding: 0 0 0 25px;
+  margin: 0;
+}
+
+.tasks-list__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}

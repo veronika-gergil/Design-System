@@ -1,0 +1,39 @@
+.values-list {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px 30px;
+}
+
+.values-list__item {
+  display: grid;
+  grid-template-rows: 108px min-content 1fr;
+  gap: 20px;
+  padding: 40px 33px 50px 33px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
+  border-radius: 30px;
+  transition:
+    color 0.5s ease,
+    background-color 0.5s ease;
+}
+
+.values-list__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.values-list__text,
+.values-list__title {
+  margin: 0;
+}
+
+.values-list__icon {
+  transition: stroke 0.5s ease;
+
+  &--brain {
+    stroke: var(--primary-text-color);
+    stroke-width: 2;
+  }
+}

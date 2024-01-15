@@ -1,7 +1,8 @@
 const currentPath = window.location.pathname;
-const currentPage = currentPath.replace(/\/([^\/.]+)\.html$/, '$1');
+const currentPage = currentPath.match(/\/([^\/]+)\.html$/)[1];
+const invalidPages = ['/', 'index', 'mission'];
 
-if (currentPage !== '/' && currentPage !== 'index') {
+if (!invalidPages.includes(currentPage)) {
   const navList = document.querySelector('.nav-list');
   navList.querySelector(`[data-code=${currentPage}]`).classList.add('active');
   navList.querySelector(`[data-active=${currentPage}]`).classList.add('active');
@@ -17,5 +18,3 @@ if (currentPage !== '/' && currentPage !== 'index') {
     }
   });
 }
-
-
