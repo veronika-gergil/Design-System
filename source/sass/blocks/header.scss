@@ -50,8 +50,25 @@
   letter-spacing: 0.03em;
   transition: color 0.5s ease;
 
+  &::before {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    content: "";
+    background-color: var(--primary-text-color);
+    opacity: 0;
+    transition:
+      width 0.5s ease,
+      opacity 0.5s ease;
+    transform: translateX(-50%);
+  }
+
+  &--active::before,
   &:hover::before {
     width: 100%;
+    opacity: 1;
   }
 
   &:focus-visible {
