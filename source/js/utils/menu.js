@@ -1,5 +1,5 @@
-const currentPath = window.location.pathname;
-const currentPage = currentPath.match(/\/([^\/]+)\.html$/)[1];
+import currentPage from "./currentPage";
+
 const invalidPages = ['/', 'index', 'mission'];
 
 if (!invalidPages.includes(currentPage)) {

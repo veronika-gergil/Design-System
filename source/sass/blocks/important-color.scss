@@ -1,27 +1,16 @@
-.important-color__block-text {
-  margin: 0;
-}
-
-.important-color__block-text--emotion,
-.important-color__block-text--influence {
-  max-width: 360px;
-}
-
-.important-color__block--purpose {
+.important-color__purpose {
   display: grid;
-  grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(2, auto);
-  gap: 20px 40px;
+  column-gap: 30px;
   align-items: center;
 }
 
 .important-color__example {
   display: flex;
   flex-direction: column;
-  grid-area: 1 / 2 / -1 / -1;
-  gap: 53px;
+  gap: 30px;
   align-items: center;
-  padding: 55px 101px;
+  padding: 33px 46px;
   border: 3px solid var(--secondary-border-color);
   border-radius: 30px;
 }
