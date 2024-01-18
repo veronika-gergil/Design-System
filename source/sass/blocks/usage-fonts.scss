@@ -1,0 +1,9 @@
+.usage-fonts__wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 35px;
+}
+
+.usage-fonts__article--last {
+  align-self: start;
+}

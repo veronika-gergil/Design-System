@@ -1,0 +1,5 @@
+.guideline-text-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 35px;
+}
