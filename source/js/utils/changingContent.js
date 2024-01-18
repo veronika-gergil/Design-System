@@ -1,9 +1,8 @@
+import currentPage from "./currentPage";
+
 const link = document.querySelector('.header__logo-link');
 const footer = document.querySelector('.footer__social-list');
 const activeMenuLink = document.querySelector('.header__menu-link--mission');
-const currentPath = window.location.pathname;
-
-const currentPage = currentPath.match(/\/([^\/]+)\.html$/)[1];
 const invalidPages = ['/', 'index'];
 
 if (!invalidPages.includes(currentPage)) {

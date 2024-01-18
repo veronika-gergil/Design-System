@@ -18,6 +18,14 @@
   margin: 0 0 20px 0;
 }
 
+.main-inner__text {
+  margin: 0;
+
+  &--first {
+    margin: 0 0 10px 0;
+  }
+}
+
 .main-inner__element {
   padding: 12px 26px;
   font-size: 0.8889rem;
@@ -34,6 +42,6 @@
 
   &--big {
     padding: 14px 31px;
-    font-size: 1.0556rem;
+    font-size: 1.2222rem;
   }
 }
